@@ -8,14 +8,16 @@ const NavHeaderLink = styled(NavLink)`
 `;
 
 export const NavBar = () => {
-  <nav>
-    <ul>
-      <li>
-        <NavHeaderLink to="/">Home</NavHeaderLink>
-      </li>
-      <li>
-        <NavHeaderLink to="/add">Add contact</NavHeaderLink>
-      </li>
-    </ul>
-  </nav>;
+  return (
+    <nav>
+      <ul>
+        <li>
+          <NavHeaderLink to="/">Home</NavHeaderLink>
+        </li>
+        <li>
+          <NavHeaderLink to="/add">Add contact</NavHeaderLink>
+        </li>
+      </ul>
+    </nav>
+  );
 };
