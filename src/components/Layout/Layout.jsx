@@ -1,11 +1,11 @@
+import MainNav from 'components/MainNav/MainNav';
 import { Outlet } from 'react-router-dom';
-import { NavBar } from 'components/NavBar/NavBar';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <>
       <header>
-        <NavBar />
+        <MainNav />
       </header>
       <main>
         <Outlet />
@@ -13,3 +13,5 @@ export const Layout = () => {
     </>
   );
 };
+
+export default Layout;
